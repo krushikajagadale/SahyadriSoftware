@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form autocomplete="on">
+      <label for="fname">First name:</label><br />
+      <input type="text" id="fname" name="fname" maxlength="5" /><br />
+      <label for="lname">Last name:</label><br />
+      <input type="text" id="lname" name="lname" disabled /><br />
+      <label for="submit">Submit</label><br />
+      <input type="submit" id="submit" name="submit" />
+
+      <input type="button" onclick="alert('Hello World!')" value="submit" />
+      <br />
+
+      <label>Radio Button:</label><br />
+      <input type="radio" id="l1" name="language" value="HTML" />
+      <label for="l1">HTML</label><br />
+      <input type="radio" id="l2" name="language" value="CSS" />
+      <label for="l2">CSS</label><br />
+      <input type="radio" id="l3" name="language" value="JavaScript" />
+      <label for="l3">JavaScript</label>
+      <br />
+      <label>CheckBox Button:</label><br />
+      <input type="checkbox" id="l1" name="language1" value="HTML" />
+      <label for="l1">HTML</label><br />
+      <input type="checkbox" id="l2" name="language2" value="CSS" />
+      <label for="l2">CSS</label><br />
+      <input type="checkbox" id="l3" name="language3" value="JavaScript" />
+      <label for="l3">JavaScript</label>
+      <br />
+      <label for="cars">Choose a car:</label>
+      <select id="cars" name="cars">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi" selected>Audi</option>
+      </select>
+      <br />
+      <textarea name="msg" rows="10" cols="30">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia tempore consectetur delectus nostrum autem mollitia illum reprehenderit quam, ipsa quidem corporis, excepturi distinctio debitis vel provident quibusdam labore nihil facilis.
+      </textarea
+      ><br />
+      <form action="/action_page.php">
+        <input list="browsers" />
+        <datalist id="browsers">
+          <option value="Edge"></option>
+          <option value="Firefox"></option>
+          <option value="Chrome"></option>
+          <option value="Opera"></option>
+          <option value="Safari"></option>
+        </datalist>
+      </form>
+      <label for="date">Date</label>
+      <input type="date" id="date" name="date" /><br />
+      <label for="file">Date</label>
+      <input type="file" id="file" name="file" /><br />
+      <label for="mn">MOBILE NUMBER</label>
+      <input type="number" id="mn" name="mn" />
+      <br />
+      <label for="tel">TEL</label>
+      <input type="tel" id="tel" name="tel" /><br />
+      <label for="tm">Time</label>
+      <input type="time" id="tm" name="tm" /><br />
+      <label for="ul">LINK</label>
+      <input type="url" id="ul" name="ul" /><br />
+      <label for="wk">WEEK</label>
+      <input type="week" id="wk" name="wk" /><br />
+    </form>
+  </body>
+</html>

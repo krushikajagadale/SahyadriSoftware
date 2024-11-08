@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Online Store</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      nav {
+        background-color: black;
+        color: white;
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 4px solid white;
+      }
+      .logo {
+        font-weight: bold;
+        font-size: 1.2rem;
+      }
+      .nav-links a {
+        color: white;
+        text-decoration: none;
+        margin-left: 1rem;
+      }
+      .nav-links a:hover {
+        color: aliceblue;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-weight: bold;
+        text-shadow: #ccc;
+        text-transform: uppercase;
+      }
+
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 2rem;
+      }
+      .card {
+        width: 450px;
+        height: 450px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin: 1rem;
+        padding: 1rem;
+        text-align: center;
+      }
+      .card img {
+        width: 100%;
+        height: 310px;
+        object-fit: cover;
+        border-radius: 5px;
+      }
+      .card button {
+        background-color: #4caf50;
+        border: none;
+        color: white;
+        padding: 0.5rem 1rem;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 3px;
+        pointer-events: visibleStroke green;
+      }
+      p.pr {
+        text-size-adjust: 50%;
+      }
+
+      p.f {
+        width: auto;
+        height: 50px;
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding-top: 35px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">Our Online Store</div>
+      <div class="nav-links">
+        <a href="Home.html">Home</a>
+        <a href="NewArrive.html">New Arrive</a>
+        <a href="BestSellers.html">Best Sellers</a>
+        <a href="Sale.html">Sale</a>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="card">
+        <img src="lap1.jpeg" alt="P1" />
+        <p class="pr"><b>Product 1</b></p>
+        <p class="pr">$19.00</p>
+
+        <button>Add to Cart</button>
+      </div>
+      <div class="card">
+        <img src="lap2.jpeg" alt="p2" />
+        <p class="pr"><b>Product 2</b></p>
+        <p class="pr">$21.89</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="card">
+        <img src="lap3.jpeg" alt="P3" />
+        <p class="pr"><b>Product 3</b></p>
+        <p class="pr">$23.76</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="card">
+        <img src="lap4.jpeg" alt="P4" />
+        <p class="pr"><b>Product 4</b></p>
+        <p class="pr">$25.88</p>
+        <button>Add to Cart</button>
+      </div>
+    </div>
+    <footer>
+      <p class="f">@2023 Our Online Store.All rights reserved</p>
+      <p></p>
+    </footer>
+  </body>
+</html>

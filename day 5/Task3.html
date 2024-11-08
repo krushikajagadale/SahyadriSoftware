@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: gray;
+      }
+      .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      .circle-image {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 20px;
+      }
+      .name {
+        font-weight: bold;
+        font-size: 24px;
+        margin: 10px 0;
+      }
+      .title {
+        color: #666;
+        margin-bottom: 20px;
+        color: black;
+      }
+      .follow-button {
+        background-color: #0077b5;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      .follow-button:hover {
+        background-color: #005fa3;
+      }
+      .Box {
+        outline: cornsilk;
+        border: whitesmoke;
+        outline-offset: unset;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="Box">
+      <div class="card">
+        <img src="profile.jpeg" alt="Profile Picture" class="circle-image" />
+        <div class="name">Krushika Jagadale</div>
+        <div class="title">Software Engineer at Technoplus</div>
+        <button class="follow-button">Follow</button>
+      </div>
+    </div>
+  </body>
+</html>
