@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Sidebar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 flex">
+    <!-- Sidebar -->
+    <div
+      id="sidebar"
+      class="fixed lg:static inset-y-0 left-0 bg-blue-500 text-white w-64 transform -translate-x-full lg:translate-x-0 lg:w-64 transition-transform duration-300 z-50"
+    >
+      <div class="p-6">
+        <h2 class="text-2xl font-bold mb-4">Sidebar</h2>
+        <ul class="space-y-4">
+          <li>
+            <a href="#" class="block hover:text-gray-200 transition"
+              >Dashboard</a
+            >
+          </li>
+          <li>
+            <a href="#" class="block hover:text-gray-200 transition">Profile</a>
+          </li>
+          <li>
+            <a href="#" class="block hover:text-gray-200 transition"
+              >Settings</a
+            >
+          </li>
+          <li>
+            <a href="#" class="block hover:text-gray-200 transition">Logout</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="flex-1 p-6">
+      <button
+        id="toggle-btn"
+        class="lg:hidden bg-blue-500 text-white py-2 px-4 rounded-lg mb-4"
+      >
+        Toggle Sidebar
+      </button>
+      <h1 class="text-4xl font-bold mb-4">Responsive Sidebar Example</h1>
+      <p class="text-gray-700">
+        This is the main content area. Resize the window to see how the sidebar
+        behaves.
+      </p>
+    </div>
+
+    <!-- JavaScript for Toggle -->
+    <script>
+      const sidebar = document.getElementById("sidebar");
+      const toggleBtn = document.getElementById("toggle-btn");
+
+      toggleBtn.addEventListener("click", () => {
+        sidebar.classList.toggle("-translate-x-full");
+      });
+    </script>
+  </body>
+</html>

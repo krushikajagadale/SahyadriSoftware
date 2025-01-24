@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Product Grid</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100">
+    <!-- Header Section -->
+    <header
+      class="bg-gradient-to-r from-purple-500 to-indigo-600 text-white py-8"
+    >
+      <div class="container mx-auto text-center">
+        <h1 class="text-4xl font-bold mb-2">Our Products</h1>
+        <p class="text-lg font-light">
+          Explore our exclusive range of products!
+        </p>
+      </div>
+    </header>
+
+    <!-- Product Grid Section -->
+    <section class="py-16">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Product Card -->
+          <div
+            class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition"
+          >
+            <img
+              src="product3.webp"
+              alt="Product 1"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h2 class="text-2xl font-semibold mb-2">Product 1</h2>
+              <p class="text-gray-600 mb-4">
+                This is a short description of Product 1. It’s amazing!
+              </p>
+              <div class="flex items-center justify-between">
+                <span class="text-lg font-bold text-indigo-600">Rs.990</span>
+                <button
+                  class="px-4 py-2 bg-indigo-600 text-white rounded-lg shadow hover:bg-indigo-700 transition"
+                >
+                  Buy Now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Repeat Product Card -->
+          <div
+            class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition"
+          >
+            <img
+              src="product2.webp"
+              alt="Product 2"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h2 class="text-2xl font-semibold mb-2">Product 2</h2>
+              <p class="text-gray-600 mb-4">
+                This is a short description of Product 2. You’ll love it!
+              </p>
+              <div class="flex items-center justify-between">
+                <span class="text-lg font-bold text-indigo-600">Rs.929</span>
+                <button
+                  class="px-4 py-2 bg-indigo-600 text-white rounded-lg shadow hover:bg-indigo-700 transition"
+                >
+                  Buy Now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Repeat Product Card -->
+          <div
+            class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition"
+          >
+            <img
+              src="product1.jpg"
+              alt="Product 3"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h2 class="text-2xl font-semibold mb-2">Product 3</h2>
+              <p class="text-gray-600 mb-4">
+                This is a short description of Product 3. A must-have!
+              </p>
+              <div class="flex items-center justify-between">
+                <span class="text-lg font-bold text-indigo-600">Rs.709</span>
+                <button
+                  class="px-4 py-2 bg-indigo-600 text-white rounded-lg shadow hover:bg-indigo-700 transition"
+                >
+                  Buy Now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Add more Product Cards here -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-gray-400 py-6">
+      <div class="container mx-auto text-center">
+        <p class="text-sm">© 2024 MyBrand. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
